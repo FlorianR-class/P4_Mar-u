@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/intitule_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_create_black_24dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/name_input"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/transparent"
+                android:hint="Intitulé"
+                android:importantForAutofill="no"
+                android:inputType="textCapSentences"
+                android:textSize="@dimen/text_add_activity"
+                app:layout_constraintBottom_toBottomOf="@id/intitule_logo"
+                app:layout_constraintLeft_toRightOf="@id/intitule_logo"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:src="@drawable/separator_horizontal"
+                app:layout_constraintLeft_toLeftOf="@id/intitule_logo"
+                app:layout_constraintTop_toBottomOf="@id/intitule_logo" />
+
+            <ImageView
+                android:id="@+id/location_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/ic_edit_location_black_24dp"
+                app:layout_constraintLeft_toLeftOf="@id/intitule_logo"
+                app:layout_constraintTop_toTopOf="@id/intitule_logo" />
+
+            <Button
+                android:id="@+id/location_button"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="@android:color/transparent"
+                android:hint="Réunion A"
+                android:textSize="@dimen/text_add_activity"
+                app:layout_constraintBottom_toBottomOf="@id/location_logo"
+                app:layout_constraintLeft_toRightOf="@id/location_logo"
+                app:layout_constraintTop_toTopOf="@id/location_logo" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/separator_horizontal"
+                app:layout_constraintLeft_toLeftOf="@id/location_logo"
+                app:layout_constraintTop_toBottomOf="@id/location_logo" />
+
+            <ImageView
+                android:id="@+id/participant_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/ic_person_add_black_24dp"
+                app:layout_constraintLeft_toLeftOf="@id/location_logo"
+                app:layout_constraintTop_toTopOf="@id/location_logo" />
+
+            <EditText
+                android:id="@+id/participant_editText"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@android:color/transparent"
+                android:hint="Adresse mail"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress"
+                android:textSize="@dimen/text_add_activity"
+                app:layout_constraintBottom_toBottomOf="@id/participant_logo"
+                app:layout_constraintLeft_toRightOf="@id/participant_logo"
+                app:layout_constraintTop_toTopOf="@id/participant_logo" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/separator_horizontal"
+                app:layout_constraintLeft_toLeftOf="@id/participant_logo"
+                app:layout_constraintTop_toBottomOf="@id/participant_logo" />
+
+            <ImageView
+                android:id="@+id/add_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_library_add_white_30dp"
+                app:layout_constraintBottom_toBottomOf="@+id/participant_editText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/participant_logo"
+                app:layout_constraintStart_toEndOf="@+id/participant_editText"
+                app:layout_constraintTop_toTopOf="@+id/participant_editText" />
+
+            <ImageView
+                android:id="@+id/date_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/ic_date_range_black_24dp"
+                app:layout_constraintLeft_toLeftOf="@id/participant_logo"
+                app:layout_constraintTop_toTopOf="@id/participant_logo" />
+
+            <Button
+                android:id="@+id/date_button"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:textSize="@dimen/text_add_activity"
+                app:layout_constraintBottom_toBottomOf="@id/date_logo"
+                app:layout_constraintLeft_toRightOf="@id/date_logo"
+                app:layout_constraintTop_toTopOf="@id/date_logo" />
+
+            <ImageView
+                android:id="@+id/separate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/separator_horizontal"
+                app:layout_constraintLeft_toLeftOf="@id/date_logo"
+                app:layout_constraintTop_toBottomOf="@id/date_logo" />
+
+            <ImageView
+                android:id="@+id/hour_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="52dp"
+                android:src="@drawable/ic_access_time_black_24dp"
+                app:layout_constraintLeft_toLeftOf="@id/date_logo"
+                app:layout_constraintTop_toTopOf="@id/date_logo" />
+
+            <Button
+                android:id="@+id/hour_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:background="@android:color/transparent"
+                android:textSize="@dimen/text_add_activity"
+                app:layout_constraintBottom_toBottomOf="@id/hour_logo"
+                app:layout_constraintLeft_toRightOf="@id/hour_logo"
+                app:layout_constraintRight_toLeftOf="@id/create_button"
+                app:layout_constraintTop_toTopOf="@id/hour_logo" />
+
+            <ImageView
+                android:id="@+id/separater"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:src="@drawable/separator_vertical"
+                app:layout_constraintBottom_toTopOf="@id/separate2"
+                app:layout_constraintLeft_toRightOf="@id/hour_button"
+                app:layout_constraintRight_toLeftOf="@id/create_button"
+                app:layout_constraintTop_toBottomOf="@id/separate" />
+
+            <ImageView
+                android:id="@+id/separate2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/separator_horizontal"
+                app:layout_constraintLeft_toLeftOf="@id/hour_logo"
+                app:layout_constraintTop_toBottomOf="@id/hour_logo" />
+
+            <Button
+                android:id="@+id/create_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="Save"
+                app:layout_constraintBottom_toBottomOf="@id/hour_logo"
+                app:layout_constraintLeft_toRightOf="@id/hour_button"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/hour_logo" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

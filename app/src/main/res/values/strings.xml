@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Ma réu</string>
+    <string name="filter_date">Filtrer par Date</string>
+    <string name="filter_location">Filtrer par Lieu</string>
+    <string name="delete_filter">Reset du filtre</string>
+    <string name="message_subject_field_require">Veuillez saisir un sujet</string>
+    <string name="confirm_delete">Voulez-vous vraiment supprimer cette réunion ?</string>
+    <string name="oui">Oui</string>
+    <string name="toast_delete">Réunion supprimée !</string>
+    <string name="non">Non</string>
+    <string name="emailErreur">Adresse mail incorrecte</string>
+
+</resources>

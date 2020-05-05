@@ -1,0 +1,77 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.florianrib.meetingmanagement.ui.meeting_list.ListMeetingActivity">
+    <item
+        android:id="@+id/filter_location"
+        android:orderInCategory="100"
+        android:title="@string/filter_location"
+        app:showAsAction="never" >
+
+        <menu>
+            <item
+                android:id="@+id/reunion1"
+                android:checkable="false"
+                android:title="Réunion A" />
+
+            <item
+                android:id="@+id/reunion2"
+                android:checkable="false"
+                android:title="Réunion B" />
+
+            <item
+                android:id="@+id/reunion3"
+                android:checkable="false"
+                android:title="Réunion C" />
+
+            <item
+                android:id="@+id/reunion4"
+                android:checkable="false"
+                android:title="Réunion D" />
+
+            <item
+                android:id="@+id/reunion5"
+                android:checkable="false"
+                android:title="Réunion E" />
+
+            <item
+                android:id="@+id/reunion6"
+                android:checkable="false"
+                android:title="Réunion F" />
+
+            <item
+                android:id="@+id/reunion7"
+                android:checkable="false"
+                android:title="Réunion G" />
+
+
+            <item
+                android:id="@+id/reunion8"
+                android:checkable="false"
+                android:title="Réunion H" />
+
+            <item
+                android:id="@+id/reunion9"
+                android:checkable="false"
+                android:title="Réunion I" />
+
+            <item
+                android:id="@+id/reunion10"
+                android:checkable="false"
+                android:title="Réunion J" />
+        </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/filter_date"
+        android:orderInCategory="100"
+        android:title="@string/filter_date"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/delete_filter"
+        android:orderInCategory="100"
+        android:title="@string/delete_filter"
+        app:showAsAction="never" />
+</menu>
